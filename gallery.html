@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Vlogs</title>
+        <meta name="description" content="Explore breathtaking travel moments captured in our gallery. Experience the beauty of adventure with stunning images from across the world.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Travel<span>Vlogs</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- Header -->
+<header class="flex header-sm">
+    <div class="container">
+        <div class="header-title">
+            <h1>Gallery</h1>
+            <p>Experience the thrill of adventure through our lens! From the towering peaks of Everest to the crystal-clear waters of Koh Tao, our gallery captures the most breathtaking moments from Asia’s top travel destinations.</p>
+        </div>
+    </div>
+</header>
+<!-- End of Header -->
+
+        <!-- gallery section -->
+<div id="gallery" class="py-4">
+    <div class="container">
+        <div class="gallery-row">
+            <div class="gallery-item shadow">
+                <img src="images/Koh Tao (scuba diving)2.jpg" alt="Scuba Diving in Koh Tao">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Bali (surfing)2.jpg" alt="Surfing in Bali">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Mount Fuji (hiking)2.jpg" alt="Hiking Mount Fuji">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Phong Nha Caves (caving)2.jpg" alt="Caving in Phong Nha">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/ladakh2.jpg" alt="Motorbiking in Ladakh">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/rishikesh2.jpg" alt="Rafting in Rishikesh">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Everest Base Camp Trek2.jpg" alt="Everest Base Camp Trek">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Chiang Mai (ziplining)2.jpg" alt="Ziplining in Chiang Mai">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Niseko (skiing)2.jpg" alt="Skiing in Niseko">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Ha Giang Loop (motorbike trip)2.jpg" alt="Motorbike Trip in Ha Giang">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+            <div class="gallery-item shadow">
+                <img src="images/Andaman Islands (scuba diving)2.jpg" alt="Scuba Diving in Andaman Islands">
+                <span class="zoom-icon">
+                    <i class="fas fa-search-plus"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of gallery section -->
+
+
+ <!-- img modal -->
+<div id="img-modal-box">
+    <div id="img-modal">
+        <button type="button" id="modal-close-btn" class="flex">
+            <i class="fas fa-times"></i>
+        </button>
+        <button type="button" id="prev-btn" class="flex">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button type="button" id="next-btn" class="flex">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <img id="modal-img" src="images/Koh Tao (scuba diving)1.jpg" alt="Featured Adventure">
+    </div>
+</div>
+<!-- end of img modal -->
+
+
+<!-- Popular Adventure Destinations Section -->
+<section id="popular" class="py-4">
+    <div class="title-wrap">
+        <span class="sm-title">Explore Thrilling Destinations</span>
+        <h2 class="lg-title">Popular Adventure Places</h2>
+    </div>
+
+    <div class="popular-row">
+        <div class="popular-item shadow">
+            <img src="images/Koh Tao (scuba diving)3.jpg" alt="Scuba Diving in Koh Tao">
+            <div>
+                <span>Scuba Diving - Koh Tao, Thailand</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star-half-alt"></i></li>
+                    <li>&nbsp;500+ reviews</li>
+                </ul>
+                <p class="text">Dive into the crystal-clear waters of Koh Tao, a paradise for scuba enthusiasts.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/Bali (surfing)3.jpg" alt="Surfing in Bali">
+            <div>
+                <span>Surfing - Bali, Indonesia</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star-half-alt"></i></li>
+                    <li>&nbsp;450+ reviews</li>
+                </ul>
+                <p class="text">Ride the world-famous waves of Bali, a haven for surfers of all levels.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/Mount Fuji (hiking)3.jpg" alt="Hiking Mount Fuji">
+            <div>
+                <span>Hiking - Mount Fuji, Japan</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li>&nbsp;600+ reviews</li>
+                </ul>
+                <p class="text">Conquer Japan’s tallest peak and experience breathtaking sunrise views.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/Phong Nha Caves (caving)3.jpg" alt="Caving in Phong Nha">
+            <div>
+                <span>Caving - Phong Nha, Vietnam</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li>&nbsp;320+ reviews</li>
+                </ul>
+                <p class="text">Explore the world's largest caves hidden in Vietnam’s lush landscapes.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/ladakh3.jpg" alt="Motorbiking in Ladakh">
+            <div>
+                <span>Motorbiking - Ladakh, India</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star-half-alt"></i></li>
+                    <li>&nbsp;480+ reviews</li>
+                </ul>
+                <p class="text">Ride through the Himalayas on an exhilarating high-altitude motorbike journey.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/rishikesh3.jpg" alt="Rafting in Rishikesh">
+            <div>
+                <span>Rafting - Rishikesh, India</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li>&nbsp;530+ reviews</li>
+                </ul>
+                <p class="text">Challenge the wild rapids of the Ganges in the adventure capital of India.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/Everest Base Camp Trek2.jpg" alt="Everest Base Camp Trek">
+            <div>
+                <span>Trekking - Everest Base Camp, Nepal</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li>&nbsp;700+ reviews</li>
+                </ul>
+                <p class="text">A bucket-list trek through the Himalayas to the base of the world’s highest peak.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/Chiang Mai (ziplining)3.jpg" alt="Ziplining in Chiang Mai">
+            <div>
+                <span>Ziplining - Chiang Mai, Thailand</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li>&nbsp;300+ reviews</li>
+                </ul>
+                <p class="text">Soar through the jungle canopies of Thailand in an unforgettable zipline adventure.</p>
+            </div>
+        </div>
+
+        <div class="popular-item shadow">
+            <img src="images/Niseko (skiing)3.jpg" alt="Skiing in Niseko">
+            <div>
+                <span>Skiing - Niseko, Japan</span>
+                <ul class="rating flex">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star-half-alt"></i></li>
+                    <li>&nbsp;400+ reviews</li>
+                </ul>
+                <p class="text">Experience Japan’s best powder snow at the famous Niseko ski resort.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Popular Adventure Destinations Section -->
+
+        
+
+<!-- Footer -->
+<footer class="py-4">
+    <div class="container footer-row">
+        
+        <!-- Brand & Description -->
+        <div class="footer-item">
+            <a href="index.html" class="site-brand">
+                Travel<span>Vlogs</span>
+            </a>
+            <p class="text">
+                Explore the world's most breathtaking destinations with Travel Vlogs. 
+                From thrilling adventures to hidden gems, we bring you the best travel experiences, tips, and guides.
+                Follow our journey and start planning yours today!
+            </p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-item">
+            <h2>Follow us on:</h2>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li> <!-- Changed from Google+ to YouTube -->
+            </ul>
+        </div>
+
+        <!-- Popular Destinations -->
+        <div class="footer-item">
+            <h2>Popular Destinations:</h2>
+            <ul>
+                <li><a href="#">Koh Tao, Thailand</a></li>
+                <li><a href="#">Bali, Indonesia</a></li>
+                <li><a href="#">Mount Fuji, Japan</a></li>
+                <li><a href="#">Phong Nha Caves, Vietnam</a></li>
+                <li><a href="#">Ladakh, India</a></li>
+                <li><a href="#">Rishikesh, India</a></li>
+                <li><a href="#">Everest Base Camp, Nepal</a></li>
+                <li><a href="#">Chiang Mai, Thailand</a></li>
+                <li><a href="#">Niseko, Japan</a></li>
+                <li><a href="#">Ha Giang Loop, Vietnam</a></li>
+                <li><a href="#">Andaman Islands, India</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="subscribe-form footer-item">
+            <h2>Subscribe for Travel Updates!</h2>
+            <form class="flex">
+                <input type="email" placeholder="Enter Your Email" class="form-control">
+                <input type="submit" class="btn" value="Subscribe">
+            </form>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            const allGalleryItem = document.querySelectorAll('.gallery-item');
+            const imgModalDiv = document.getElementById('img-modal-box');
+            const modalCloseBtn = document.getElementById('modal-close-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            let imgIndex = 0;
+        
+            allGalleryItem.forEach((galleryItem, index) => {
+                galleryItem.addEventListener('click', () => {
+                    imgModalDiv.style.display = "block";
+                    imgIndex = index;
+                    showImageContent(imgIndex);
+                });
+            });
+        
+            nextBtn.addEventListener('click', () => {
+                imgIndex = (imgIndex + 1) % allGalleryItem.length;
+                showImageContent(imgIndex);
+            });
+        
+            prevBtn.addEventListener('click', () => {
+                imgIndex = (imgIndex - 1 + allGalleryItem.length) % allGalleryItem.length;
+                showImageContent(imgIndex);
+            });
+        
+            function showImageContent(index) {
+                const imgModal = document.getElementById('modal-img');
+                imgModal.src = allGalleryItem[index].querySelector('img').src;
+            }
+        
+            modalCloseBtn.addEventListener('click', () => {
+                imgModalDiv.style.display = "none";
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Vlogs</title>
+        <meta name="description" content="Get in touch with Travel Vlogs! Contact us for travel inquiries, collaborations, and adventure tips. Let's explore the world together!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Fonts -->
+        <link rel="stylesheet" href="font/fonts.css">
+        <!-- Normalize CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/utility.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container flex">
+                <a href="index.html" class="site-brand">
+                    Travel<span>Vlogs</span>
+                </a>                
+                <button type="button" id="navbar-show-btn" class="flex">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div id="navbar-collapse">
+                    <button type="button" id="navbar-close-btn" class="flex">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Header -->
+        <header class="flex header-sm">
+            <div class="container">
+                <div class="header-title">
+                    <h1>Contact Us</h1>
+                    <p>Have questions about our travel experiences? Want to collaborate or share your own adventure? Reach out to us, and let's explore the world together!</p>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-4">
+            <div class="container">
+                <div class="title-wrap">
+                    <span class="sm-title">Let's Connect & Explore the World Together</span>
+                    <h2 class="lg-title">Get in Touch</h2>
+                </div>
+                <div class="contact-row">
+                    <!-- Contact Form -->
+                    <div class="contact-left">
+                        <form class="contact-form">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <textarea rows="4" class="form-control" placeholder="Your Message" style="resize: none;" required></textarea>
+                            <input type="submit" class="btn" value="Send Message">
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-right my-2">
+                        <div class="contact-item">
+                            <span class="contact-icon flex"><i class="fas fa-phone-alt"></i></span>
+                            <div>
+                                <span>Phone</span>
+                                <p class="text">+91-7993744403</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon flex"><i class="fas fa-map-marked-alt"></i></span>
+                            <div>
+                                <span>Location</span>
+                                <p class="text">Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon flex"><i class="fas fa-envelope"></i></span>
+                            <div>
+                                <span>Email</span>
+                                <p class="text">Drop us a message at <a href="mailto:travelvlogs@gmail.com">travelvlogs@gmail.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="py-4">
+            <div class="container footer-row">
+                <div class="footer-item">
+                    <a href="index.html" class="site-brand">Travel<span>Vlogs</span></a>
+                    <p class="text">Discover the world through adventure! Travel Vlogs is your ultimate guide to exploring breathtaking locations, experiencing new cultures, and uncovering hidden gems.</p>
+                </div>
+                <div class="footer-item">
+                    <h2>Subscribe for Travel Tips & Updates!</h2>
+                    <form class="flex">
+                        <input type="email" placeholder="Enter your email" class="form-control" required>
+                        <input type="submit" class="btn" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- JS -->
+        <script src="js/script.js"></script>
+        <script>
+            document.querySelector(".contact-form").addEventListener("submit", function(e) {
+                const email = document.querySelector(".contact-form input[type='email']").value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    e.preventDefault();
+                    alert("Please enter a valid email address.");
+                }
+            });
+        
+            document.querySelector(".subscribe-form form").addEventListener("submit", function(e) {
+                const email = document.querySelector(".subscribe-form input[type='email']").value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(email)) {
+                    e.preventDefault();
+                    alert("Please enter a valid email address!");
+                }
+            });
+        </script>
+    </body>
+</html>

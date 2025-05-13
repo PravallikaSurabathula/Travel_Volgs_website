@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Travel Vlogs</title>
+        <meta name="description" content="Explore breathtaking travel destinations, thrilling adventures, and expert travel guides with Travel Vlogs!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- fonts -->
+        <link rel = "stylesheet" href = "font/fonts.css">
+        <!-- normalize css -->
+        <link rel = "stylesheet" href = "css/normalize.css">
+        <!-- custom css -->
+        <link rel = "stylesheet" href = "css/utility.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <link rel = "stylesheet" href = "css/responsive.css">
+    </head>
+    <body>
+        <!-- navbar  -->
+        <nav class = "navbar">
+            <div class = "container flex">
+                <a href = "index.html" class = "site-brand">
+                    Travel<span>Vlogs</span>
+                </a>
+
+                <button type = "button" id = "navbar-show-btn" class = "flex">
+                    <i class = "fas fa-bars"></i>
+                </button>
+                <div id = "navbar-collapse">
+                    <button type = "button" id = "navbar-close-btn" class = "flex">
+                        <i class = "fas fa-times"></i>
+                    </button>
+                    <ul class = "navbar-nav">
+                        <li class = "nav-item">
+                            <a href = "index.html" class = "nav-link">Home</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "gallery.html" class = "nav-link">Gallery</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "blog.html" class = "nav-link">Blog</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "about.html" class = "nav-link">About</a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "contact.html" class = "nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end of navbar  -->
+
+        <!-- header -->
+        <header class = "flex">
+            <div class = "container">
+                <div class = "header-title">
+                    <h1>Journey Beyond: Travel Insights & Adventure Tips</h1>
+                    <p>Embark on an unforgettable adventure across Asia’s most thrilling destinations! From diving in crystal-clear waters to conquering mountain peaks, our travel vlogs bring you firsthand experiences, expert tips, and hidden gems. Whether you seek adrenaline or cultural wonders, let us guide you to the ultimate travel experiences. Get inspired and explore!</p>
+                </div>
+                <div class = "header-form">
+                    <h2>Choose your Travel location:</h2>
+                    <form class = "flex">
+                        <input type = "text" class = "form-control" placeholder="Destination name">
+                        <input type="date" class = "form-control" placeholder="Date">
+                        <input type="number" class = "form-control" placeholder="Price">
+                        <input type="submit" class = "btn" value = "Search">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- header -->
+
+        <!-- featured section -->
+        <section id = "featured" class = "py-4">
+            <div class = "container">
+                <div class = "title-wrap">
+                    <span class = "sm-title">Know about some places before your travel</span>
+                    <h2 class = "lg-title">featured places</h2>
+                </div>
+                        <div class="featured-row">
+                            <div class="featured-item my-2 shadow">
+                                <img src ="images/Koh Tao (scuba diving)1.jpg" alt="featured place">
+                                <div class="featured-item-content">
+                                    <span>
+                                        <i class="fas fa-map-marker-alt"> Scuba diving</i>
+                                        Koh Tao, Thailand
+                                    </span>
+                                    <div>
+                                        <p class="text">Koh Tao, Thailand is one of the world's best and most affordable places for scuba diving. Known as the "Turtle Island," it offers crystal-clear waters, vibrant coral reefs, and diverse marine life, including whale sharks, rays, and sea turtles. With over 25 dive sites, including Chumphon Pinnacle and Shark Bay, Koh Tao is perfect for beginners and experienced divers. It's also a top destination for getting PADI-certified, with numerous dive schools offering budget-friendly courses. Whether you're exploring underwater caves, shipwrecks, or colorful coral gardens, Koh Tao promises an unforgettable diving adventure.</p>
+                                    </div>
+                             </div>
+                        </div>
+                        <div class="featured-item my-2 shadow">
+                            <img src ="images/Bali (surfing)1.jpg" alt="featured place">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"> Surfing</i>
+                                Bali, Indonesia
+                            </span>
+                                <div>
+                                    <p class="text">Bali is a world-famous surfing destination, attracting both beginners and professionals. Popular surf spots include Kuta Beach for beginners, Uluwatu and Padang Padang for advanced surfers, and Canggu for a mix of waves and a laid-back vibe. The island offers warm waters, consistent waves, and a vibrant surf culture, making it a top choice for adventure seekers.</p>
+                                </div>
+                         </div>
+                    </div>
+                    <div class="featured-item my-2 shadow">
+                        <img src ="images/Mount Fuji (hiking)1.jpg" alt= "featured place">
+                        <div class="featured-item-content">
+                            <span>
+                                <i class="fas fa-map-marker-alt"> Hiking</i>
+                                Mount Fuji, Japan
+                            </span>
+                            <div>
+                                <p class="text">Mount Fuji, Japan is the country’s most iconic peak and a dream destination for hiking enthusiasts. Standing at 3,776 meters, it is Japan’s tallest mountain and a UNESCO World Heritage site. The official climbing season runs from July to September, offering relatively mild weather and well-maintained trails. The Yoshida Trail is the most popular route, featuring rest stations and breathtaking sunrise views from the summit, known as "Goraiko". Whether you're a seasoned hiker or a beginner, conquering Mount Fuji is a once-in-a-lifetime experience filled with stunning landscapes and cultural significance.</p>
+                            </div>
+                     </div>
+                </div>
+                <div class="featured-item my-2 shadow">
+                    <img src ="images/Phong Nha Caves (caving)1.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"> Caving</i>
+                            Phong Nha Caves, Vietnam
+                        </span>
+                        <div>
+                            <p class="text">Phong Nha Caves, Vietnam is a top destination for caving enthusiasts, offering some of the world's most spectacular underground landscapes. Located in Phong Nha-Kẻ Bàng National Park, this UNESCO World Heritage Site features massive limestone caves, underground rivers, and stunning rock formations. Among them, Son Doong Cave, the world's largest, attracts adventurers seeking an unparalleled spelunking experience. Visitors can explore Phong Nha Cave by boat, trek through Paradise Cave, or take on the challenging Tu Lan Cave system. With its breathtaking stalactites, stalagmites, and hidden jungles, Phong Nha is a must-visit for adventure seekers.</p>
+                        </div>
+                 </div>
+            </div>
+            <div class="featured-item my-2 shadow">
+                <img src ="images/ladakh1.jpg" alt="featured place">
+                <div class="featured-item-content">
+                    <span>
+                        <i class="fas fa-map-marker-alt"> Motorbiking</i>
+                        Ladakh, India
+                    </span>
+                    <div>
+                        <p class="text">Ladakh, often called the "Land of High Passes," is a paradise for motorbiking enthusiasts. The rugged Himalayan terrain, high-altitude passes like Khardung La and Chang La, and breathtaking landscapes make it one of the most thrilling road trip destinations in the world. Riders traverse winding roads, glacial rivers, and vast barren landscapes, experiencing the raw beauty of Pangong Lake, Nubra Valley, and Magnetic Hill. The adventure is not just about the ride but also about adapting to high altitudes, making it a bucket-list experience for bikers.</p>
+                    </div>
+             </div>
+        </div>
+        <div class="featured-item my-2 shadow">
+            <img src ="images/Rishikesh 1.jpg" alt="featured place">
+            <div class="featured-item-content">
+                <span>
+                    <i class="fas fa-map-marker-alt"> Rafting / Bungee Jumping</i>
+                    Rishikesh, India
+                </span>
+                <div>
+                    <p class="text">Rishikesh, known as the "Adventure Capital of India," is famous for white-water rafting on the Ganges River and thrilling bungee jumping. The rafting experience ranges from beginner-friendly rapids to intense Grade IV sections, offering an adrenaline-pumping ride through scenic gorges. For bungee jumping, Jumpin Heights features India’s highest (83m) fixed-platform jump, set amidst stunning Himalayan landscapes. This spiritual town combines adventure with tranquility, making it a must-visit for thrill-seekers.</p>
+                </div>
+         </div>
+    </div>
+    <div class="featured-item my-2 shadow">
+        <img src ="images/Everest Base Camp Trek1.jpg" alt="featured place">
+        <div class="featured-item-content">
+            <span>
+                <i class="fas fa-map-marker-alt"> Base Camp Trek</i>
+                Everest, Nepal
+            </span>
+            <div>
+                <p class="text">The Everest Base Camp Trek in Nepal is one of the most iconic and challenging trekking experiences in the world. It takes adventurers through the stunning Khumbu Valley, offering breathtaking views of Mount Everest (8,848m) and other Himalayan peaks. The trek typically takes around 12–14 days, passing through Namche Bazaar, Tengboche Monastery, and Kala Patthar, a famous viewpoint for panoramic Everest views. Trekkers experience the rich Sherpa culture, high-altitude landscapes, and the thrill of reaching the base of the world's highest mountain.</p>
+            </div>
+     </div>
+</div>
+<div class="featured-item my-2 shadow">
+    <img src ="images/Chiang Mai (ziplining)1.jpg" alt="featured place">
+    <div class="featured-item-content">
+        <span>
+            <i class="fas fa-map-marker-alt"> Ziplining</i>
+            Chiang Mai, Thailand
+        </span>
+        <div>
+            <p class="text">Chiang Mai is a top ziplining destination in Thailand, offering thrilling rides through lush rainforests and mountainous landscapes. Adventure parks like Flight of the Gibbon provide long zip lines, sky bridges, and abseiling experiences. As you soar through the treetops, you’ll witness stunning jungle scenery and may even spot wild gibbons. It's an exhilarating way to explore Northern Thailand’s natural beauty.</p>
+        </div>
+ </div>
+</div>
+<div class="featured-item my-2 shadow">
+    <img src ="images/Niseko (skiing)1.jpg" alt="featured place">
+    <div class="featured-item-content">
+        <span>
+            <i class="fas fa-map-marker-alt"> Skiing</i>
+            Niseko, Japan
+        </span>
+        <div>
+            <p class="text">Niseko, Japan is a world-famous skiing destination known for its powder snow and breathtaking mountain views. Located on Hokkaido Island, Niseko offers some of the best ski resorts in Asia, attracting winter sports enthusiasts from around the globe. The region boasts four interconnected ski areas—Grand Hirafu, Hanazono, Niseko Village, and Annupuri—offering a variety of slopes for beginners to advanced skiers. With its abundant snowfall, vibrant après-ski culture, and relaxing hot springs (onsen), Niseko is a must-visit for anyone looking to experience world-class skiing in Japan.</p>
+        </div>
+ </div>
+</div>
+<div class="featured-item my-2 shadow">
+    <img src ="images/Ha Giang Loop (motorbike trip)1.jpg" alt="featured place">
+    <div class="featured-item-content">
+        <span>
+            <i class="fas fa-map-marker-alt"> Motorbike Trip</i>
+            Ha Giang Loop, Vietnam
+        </span>
+        <div>
+            <p class="text">The Ha Giang Loop in Vietnam is an epic motorbike adventure through some of the country's most breathtaking landscapes. This 300–350 km journey winds through limestone mountains, terraced rice fields, and remote ethnic villages in the northernmost province of Vietnam. Riders experience thrilling mountain passes like Ma Pi Leng Pass, known for its dramatic cliffs and views of the Nho Que River. The loop takes 3–5 days and offers a chance to explore the rich cultures of the H'Mong, Tay, and Dao ethnic minorities while navigating winding roads and stunning scenery.</p>
+        </div>
+ </div>
+</div>
+<div class="featured-item my-2 shadow">
+    <img src ="images/Andaman Islands (scuba diving)1.jpg" alt="featured place">
+    <div class="featured-item-content">
+        <span>
+            <i class="fas fa-map-marker-alt"> Scuba Diving Paradise</i>
+            Andaman Islands, India
+        </span>
+        <div>
+            <p class="text">The Andaman Islands, located in the Bay of Bengal, are a tropical paradise known for their stunning coral reefs, crystal-clear waters, and diverse marine life. It’s one of the best places in India for scuba diving, offering breathtaking underwater experiences for both beginners and experienced divers.</p>
+        </div>
+ </div>
+</div>
+
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of featured section -->
+
+        <!-- Services Section -->
+<section id="services" class="py-4">
+    <div class="container">
+        <div class="title-wrap">
+            <span class="sm-title">Discover the services we provide for your adventure</span>
+            <h2 class="lg-title">Our Services</h2>
+        </div>
+
+        <div class="services-row">
+            <div class="services-item">
+                <span class="services-icon">
+                    <i class="fas fa-hotel"></i>
+                </span>
+                <h3>Adventure Stays</h3>
+                <p class="text">Stay at handpicked accommodations, from cozy mountain lodges to beachfront retreats, ensuring comfort after a thrilling day of exploration.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-item">
+                <span class="services-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </span>
+                <h3>Expert Travel Guides</h3>
+                <p class="text">Explore Asia's top adventure spots with our in-depth travel guides, featuring must-visit locations, safety tips, and hidden gems.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="services-item">
+                <span class="services-icon">
+                    <i class="fas fa-money-bill"></i>
+                </span>
+                <h3>Budget-Friendly Trips</h3>
+                <p class="text">Find cost-effective travel options without compromising on experiences. Get tips on affordable stays, transport, and activities for an epic journey.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Services Section -->
+
+
+       <!-- Testimonials Section -->
+<section id="testimonials" class="py-4">
+    <div class="container">
+        <div class="title-wrap">
+            <span class="sm-title">Hear from our fellow adventurers</span>
+            <h2 class="lg-title">Traveler Reviews</h2>
+        </div>
+
+        <div class="test-row">
+            <div class="test-item">
+                <p class="text">"Koh Tao was an absolute dream for scuba diving! Thanks to Travel Vlogs, I found the best diving spots and had an incredible experience underwater."</p>
+                <div class="test-item-info">
+                    <img src="images/Koh Tao (scuba diving)3.jpg" alt="testimonial">
+                    <div>
+                        <h3>Emma Thompson</h3>
+                        <p class="text">Scuba Diving in Koh Tao</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-item">
+                <p class="text">"Riding the waves in Bali was unforgettable! Travel Vlogs helped me discover the best surf spots, and the local tips made my trip even better."</p>
+                <div class="test-item-info">
+                    <img src="images/Bali (surfing)3.jpg" alt="testimonial">
+                    <div>
+                        <h3>Liam Carter</h3>
+                        <p class="text">Surfing in Bali</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-item">
+                <p class="text">"The Ha Giang Loop was the most thrilling motorbike adventure of my life. The winding roads, epic landscapes, and hidden villages made it an unforgettable journey."</p>
+                <div class="test-item-info">
+                    <img src="images/Ha Giang Loop (motorbike trip)3.jpg" alt="testimonial">
+                    <div>
+                        <h3>Sophia Nguyen</h3>
+                        <p class="text">Motorbiking Ha Giang Loop</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-item">
+                <p class="text">"Reaching the summit of Mount Fuji was a bucket-list moment! Travel Vlogs provided the best hiking guides and preparation tips for an incredible trek."</p>
+                <div class="test-item-info">
+                    <img src="images/Mount Fuji (hiking)3.jpg" alt="testimonial">
+                    <div>
+                        <h3>Daniel Lee</h3>
+                        <p class="text">Hiking Mount Fuji</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="test-item">
+                <p class="text">"Everest Base Camp was the adventure of a lifetime! Thanks to Travel Vlogs, I knew exactly what to expect and how to prepare for the challenging trek."</p>
+                <div class="test-item-info">
+                    <img src="images/Everest Base Camp Trek3.jpg" alt="testimonial">
+                    <div>
+                        <h3>Ava Patel</h3>
+                        <p class="text">Trekking Everest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Testimonials Section -->
+
+
+        <!-- video section -->
+        <section id = "video">
+            <div class = "video-wrapper flex">
+                    <video controls loop>
+                        <source src="videos/19227266-hd_1920_1080_60fps.mp4" type="video/mp4">
+                    </video>
+                <button type = "button" id = "play-btn">
+                    <i class = "fas fa-play"></i>
+                </button>
+            </div>
+        </section>
+        <!-- end of video section -->
+
+        <!-- footer -->
+<footer class="py-4">
+    <div class="container footer-row">
+        <div class="footer-item">
+            <a href="index.html" class="site-brand">
+                Travel<span>Vlogs</span>
+            </a>
+            <p class="text">Explore the heart of Asia’s most thrilling destinations with Travel Vlogs! Whether it’s diving in Koh Tao, trekking to Everest Base Camp, or riding the waves in Bali, we bring you expert tips, real traveler insights, and adventure-packed stories.  
+            Let’s uncover hidden gems, push boundaries, and embrace the thrill of exploration—one epic journey at a time!</p>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+
+                <div class = "footer-item">
+                    <h2>Follow us on: </h2>
+                    <ul class = "social-links">
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class = "fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-item">
+                    <h2>Popular Places:</h2>
+                    <ul>
+                        <li><a href = "#">Koh Tao</a></li>
+                        <li><a href = "#">Bali</a></li>
+                        <li><a href = "#">Mount Fuji</a></li>
+                        <li><a href = "#">Phong Nha Caves</a></li>
+                        <li><a href = "#">Ladakh</a></li>
+                        <li><a href = "#">Rishikesh</a></li>
+                        <li><a href = "#"> Everest</a></li>
+                        <li><a href = "#">Chiang Mai</a></li>
+                        <li><a href = "#">Niseko</a></li>
+                        <li><a href = "#">Ha Giang Loop</a></li> 
+                        <li><a href = "#">Andaman Island</a></li>
+                    </ul>
+                </div>
+
+        </footer>
+        <!-- end of footer -->
+        <section class="slider-end">
+            <h2>Thank You for Exploring with Us!</h2>
+            <p>Join us for more exciting travel adventures.</p>
+        </section>
+        
+        <!-- js -->
+        <script src = "js/script.js"></script>
+        <script>
+            // play/pause video
+            let video = document.querySelector('.video-wrapper video');
+            document.getElementById('play-btn').addEventListener('click', () => {
+                if(video.paused){
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        </script>
+    </body>
+</html>
